@@ -7,28 +7,25 @@ public class ReaderExample {
         String name;
         int age;
 
-
-
         System.out.println("Enter your name");
         name = reader.nextLine();
+
+        do {
         System.out.println("Enter your age");
         age = reader.nextInt();
+        }while( age <= 0 || age >= 160)
 
 
-        while( age <= 0 || age >= 160){
-            System.out.println("Enter your age");
-            age = reader.nextInt();
-
-        }
+            
 
         if( age <= 0 || name == "" || age > 160){
             System.out.println(" Your age or name is invalid !!! ");
+        
         }
-       
         
         
         else{
-            System.out.println("Hello "  +  name +  "your age is :  " + age);
+            System.out.println(" Hello "  +name+    " your age is :  " + age);
         
         }
         
