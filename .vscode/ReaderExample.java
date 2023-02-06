@@ -14,10 +14,10 @@ public class ReaderExample {
         System.out.println("Enter your age");
         age = reader.nextByte();
 
-        if( age != 0){
-            System.out.println("Hello "  +  name +  "your age is :  " + age);
-        }else{
+        if( age <= 0){
             System.out.println(" Your age is invlid !!! ");
+        }else{
+            System.out.println("Hello "  +  name +  "your age is :  " + age);
         
         }
     }
