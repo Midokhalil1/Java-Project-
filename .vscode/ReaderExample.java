@@ -14,8 +14,8 @@ public class ReaderExample {
         System.out.println("Enter your age");
         age = reader.nextByte();
 
-        if( age <= 0){
-            System.out.println(" Your age is invlid !!! ");
+        if( age <= 0 || name == ""){
+            System.out.println(" Your age or name is invalid !!! ");
         }else{
             System.out.println("Hello "  +  name +  "your age is :  " + age);
         
