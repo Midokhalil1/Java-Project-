@@ -20,5 +20,8 @@ public class ReaderExample {
             System.out.println("Hello "  +  name +  "your age is :  " + age);
         
         }
+        if (age >= 18){
+            System.out.println("You're adult");
+        }
     }
 }
