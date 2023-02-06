@@ -5,14 +5,21 @@ public class ReaderExample {
         
         Scanner reader = new Scanner(System.in);
         String name;
-        byte age;
+        int age;
 
 
 
         System.out.println("Enter your name");
         name = reader.nextLine();
         System.out.println("Enter your age");
-        age = reader.nextByte();
+        age = reader.nextInt();
+
+
+        while( age <= 0 || age >= 160){
+            System.out.println("Enter your age");
+            age = reader.nextInt();
+
+        }
 
         if( age <= 0 || name == "" || age > 160){
             System.out.println(" Your age or name is invalid !!! ");
