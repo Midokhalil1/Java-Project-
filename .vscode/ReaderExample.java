@@ -14,9 +14,13 @@ public class ReaderExample {
         System.out.println("Enter your age");
         age = reader.nextByte();
 
-        if( age <= 0 || name == ""){
+        if( age <= 0 || name == "" || age > 160){
             System.out.println(" Your age or name is invalid !!! ");
-        }else{
+        }
+       
+        
+        
+        else{
             System.out.println("Hello "  +  name +  "your age is :  " + age);
         
         }
@@ -31,5 +35,11 @@ public class ReaderExample {
         }else if (age >= 18){
             System.out.println(" You're adult");
         }
+
+        int sum = 0;
+        for( int index = 1; index <= age; index++){
+            sum = sum + index;
+        }
+        System.out.println("Sum is : " + sum);
     }
 }
